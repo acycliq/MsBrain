@@ -20,9 +20,6 @@ function dapi(cfg) {
         transformation: new L.Transformation(1 / 1024, 0, 1 / 1024, 0),
     });
 
-    var southWest = L.latLng(img[1], img[0]),
-        northEast = L.latLng(0, 0),
-        mapBounds = L.latLngBounds(southWest, northEast);
 
     map = L.map('mymap', {
         crs: L.CRS.MySimple,
@@ -30,8 +27,7 @@ function dapi(cfg) {
     }).setView([img[1], img[0] / 2], 2);
     L.tileLayer(tiles, {
         minZoom: 0,
-        maxZoom: 8,
-        bounds: mapBounds,
+        maxZoom: 10
     }).addTo(map);
 
     function getTaxonomy(gene) {
@@ -52,12 +48,19 @@ function dapi(cfg) {
         return out
     }
 
+    function getColor(gene) {
+        if (glyphMap.get(gene)) {
+            out = glyphMap.get(gene).color
+        } else {
+            out = glyphMap.get('Generic').color
+        }
+        return out
+    }
+
     // get the svg markers (glyphs)
     var glyphs = glyphSettings();
-    var getColor = glyphColor;
-    var glyphMap = d3.map(glyphs, function (d) {
-        return d.gene;
-    });
+    // var getColor = d3.map(glyphs, function (d) {return d.color});
+    var glyphMap = d3.map(glyphs, function (d) {return d.gene;});
 
     //get the class colors
     var classColors = classColorsCodes();
@@ -81,7 +84,7 @@ function dapi(cfg) {
             radius: getRadius(feature.properties.size),
             shape: feature.properties.glyphName,
             //fillColor: "none",//getColor(feature.properties.taxonomy),
-            color: glyphColor(feature.properties.taxonomy),
+            color: feature.properties.glyphColor,
             weight: 0.85,
             opacity: 0.85,
             fillOpacity: 0.0,

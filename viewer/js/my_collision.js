@@ -1,7 +1,3 @@
-// *******************************************************
-//           DEPRECATED CODE. NOT USED ANYMORE
-//  *******************************************************
-
 function solveCollision(circles, opts) {
   opts = opts || {};
   var tree = d3.quadtree()

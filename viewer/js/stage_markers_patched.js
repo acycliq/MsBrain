@@ -15,7 +15,7 @@ function add_spots_patched(all_geneData, map) {
     }
 
     function markerColor(geneName) {
-        var colorCode = glyphColor(glyphSettings().filter(d => d.gene === geneName)[0].taxonomy);
+        var colorCode = glyphSettings().filter(d => d.gene === geneName)[0].color;
         var out = myUtils().string2hex(colorCode);
         return out
     }
@@ -33,11 +33,24 @@ function add_spots_patched(all_geneData, map) {
         }, {}); // empty object is the initial value for result object
     };
 
+    // function scaleRamp(z) {
+    //     return z === 0 ? 0.125 :
+    //         z === 1 ? 0.125 :
+    //             z === 2 ? 0.125 :
+    //                 z === 3 ? 0.125 :
+    //                     z === 4 ? 0.125 :
+    //                         z === 5 ? 0.125 :
+    //                             z === 6 ? 0.0625 : // every time you zoom in, leaflet scales up by 2. Divide here by 2 to keep the marker the same as in zoom level 5
+    //                                 z === 7 ? 0.03125 : 1
+    // }
+
     function scaleRamp(z) {
-        var scale = 1 / 64;
-        return z === 0 ? scaleRampHelper(z, scale) :
-                z === 1 ? scaleRampHelper(z,  2 * scale) :
-                    z === 2 ? scaleRampHelper(z,  2 * scale) : scaleRampHelper(z, 4 * scale)
+        var scale = 1 / 12;
+        return z === 0 ? scaleRampHelper(z, 0.25 * scale) :
+            z === 1 ? scaleRampHelper(z, 0.25 * scale) :
+                z === 2 ? scaleRampHelper(z, 0.25 * scale) :
+                    z === 3 ? scaleRampHelper(z, 0.25 * scale) :
+                        z === 4 ? scaleRampHelper(z, 0.50 * scale) : scaleRampHelper(z, scale)
 
         // return z === 0 ? 0.03 * 2**3 :
         //     z === 1 ? 0.03 * 2**3 :
@@ -50,8 +63,8 @@ function add_spots_patched(all_geneData, map) {
         //                                 z === 8 ? 0.03 : (2**z)/7602
     }
 
-    function scaleRampHelper(z, scale){
-        // makes a tiny dot and the its scales it up based on the map and the dapi dimensions
+    function scaleRampHelper(z, scale) {
+        // makes a tiny dot and then its scales it up based on the map and the dapi dimensions
         // As a general remark also, keep in mind that every time you zoom in, leaflet (I think) scales up by 2.
         // Divide by 2 to keep the marker the same as size. Hence if for zoom level = 3 the  return value from
         // this function is lets say zo 10, then when to keep the same size on the screen for the dot, at zoom = 4
@@ -60,10 +73,11 @@ function add_spots_patched(all_geneData, map) {
             dapi_size = [configSettings.roi.x1 - configSettings.roi.x0, configSettings.roi.y1 - configSettings.roi.y0],
             max_dapi = Math.max(...dapi_size),
             c = map_size / max_dapi,
-            tiny_dot = 1 / (2**z),
+            tiny_dot = 1 / (2 ** z),
             dot = c * tiny_dot;
         return dot * scale
     }
+
 
 
     var pixiLayer = (function () {
