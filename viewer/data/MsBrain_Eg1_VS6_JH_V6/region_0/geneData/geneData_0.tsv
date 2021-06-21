@@ -1,4 +1,4 @@
 Gene	x	y	Gene_id	neighbour	neighbour_array	neighbour_prob
 Slc17a8	0	0	8	1	[1]	[1.0]
 Slc17a8	89917	64016	8	1	[1]	[1.0]
-Slc17a8	2000	1000	8	1	[1]	[1.0]
+Slc17a8	20	20	8	1	[1]	[1.0]
