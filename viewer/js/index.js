@@ -106,6 +106,9 @@ function legendControl() {
 
     $('#legend').show()
     console.log('legend added')
+
+    $('#dropdown').show()
+    console.log('dropdown added')
 }
 
 
@@ -155,9 +158,9 @@ function hidePanels(bool){
     console.log('Info and donut panels: hidden= ' + bool)
 }
 
-function run() {
+function run(configSettings) {
     console.log('app starts');
-    configSettings = config();
+    // configSettings = config();
 
     fetcher([configSettings.cellData, configSettings.geneData, configSettings.cellBoundaries]).then(
         result => make_package(result),
