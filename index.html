@@ -236,7 +236,8 @@
 
     <div id="mydropdown" class="dropdown map-content" >
         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Dropdown button
+            Select Data
+            <span class="caret"></span>
         </button>
         <div class="dropdown-menu">
             <li><a class="dropdown-item" href="#" onclick='dispatcher("default")'>default</a></li>
@@ -308,6 +309,16 @@
         //reload page
         location.reload(true);
     }
+</script>
+
+<script>
+    // when document ready, show selected on dropdown
+    $(function() {
+        if (cookie){
+            d3.select('.dropdown-toggle').node().innerHTML = cookie + '  ';
+            $('.dropdown-toggle').append("<span class='caret'></span>");
+        }
+    });
 </script>
 
 
