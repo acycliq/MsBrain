@@ -54,7 +54,7 @@ html, body, #mymap {
 }
 
 .leaflet-container {
-    background: #ffffff;
+    background: #000000;
 }
 
 th {
@@ -383,8 +383,8 @@ table.no-spacing td {
 }
 
 #mydropdown{
-    top: 9px;
-    left: 350px;
+    top: 75px;
+    left: 9px;
     cursor: pointer;
     /*pointer-events: none;*/
     /*display: none;*/
