@@ -45,7 +45,8 @@ function add_spots_patched(all_geneData, map) {
     // }
 
     function scaleRamp(z) {
-        var scale = 1 / 12;
+        // var scale = 1 / 12;
+        var scale = 1;
         return z === 0 ? scaleRampHelper(z, 0.25 * scale) :
             z === 1 ? scaleRampHelper(z, 0.25 * scale) :
                 z === 2 ? scaleRampHelper(z, 0.25 * scale) :
