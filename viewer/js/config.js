@@ -4,7 +4,7 @@ function config() {
             name: 'default',
             roi: {"x0": 0, "x1": 89917, "y0": 0, "y1": 64016},
             imageSize: [262144, 262144 * 64016 / 89917],
-            tiles: 'https://www.acycliq.xyz/MsBrain_Eg1_VS6_JH_V6/region_0/262144px/{z}/{y}/{x}.jpg',
+            tiles: 'https://www.acycliq.xyz/MsBrain_Eg1_VS6_JH_V6/region_0000/262144px/{z}/{y}/{x}.jpg',
             cellData: 'https://api.github.com/repos/acycliq/MsBrain_Eg1_VS6_JH_V6/contents/region_0/cellData?ref=master',
             geneData: 'https://api.github.com/repos/acycliq/MsBrain_Eg1_VS6_JH_V6/contents/region_0/geneData?ref=master',
             cellBoundaries: 'https://api.github.com/repos/acycliq/MsBrain_Eg1_VS6_JH_V6/contents/region_0/cellBoundaries?ref=master',
