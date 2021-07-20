@@ -159,7 +159,8 @@ function dapi(cfg) {
                 // "Cell_Num": origin.Cell_Num,
                 "fromPoint": fromPoint,
                 "toPoint": toPoint,
-                "color": getColor(gene),
+                // "color": getColor(gene),
+                "color": getColor("NULL"), // REMOVE THIS TO MAKE THE LINESTRING WORK PROPERLY
                 // "color": getColor(glyphMap.get(gene).taxonomy),
             };
 
