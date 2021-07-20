@@ -159,7 +159,7 @@ function dapi(cfg) {
                 // "Cell_Num": origin.Cell_Num,
                 "fromPoint": fromPoint,
                 "toPoint": toPoint,
-                "color": getColor(getTaxonomy(gene)),
+                "color": getColor(gene),
                 // "color": getColor(glyphMap.get(gene).taxonomy),
             };
 
