@@ -54,7 +54,7 @@ function config() {
             name: 'MsBrain_Eg3_VS6_JH_V6_region_1',
             roi: {"x0": 0, "x1": 93968, "y0": 0, "y1": 73157},
             imageSize: [262144, 262144 * 73157 / 93968, ],
-            tiles: 'https://www.acycliq.xyz/MsBrain_Eg3_VS6_JH_V6/region_1/262144px/{z}/{y}/{x}.jpg_ZZZ',
+            tiles: 'https://vizgen.s3.us-west-002.backblazeb2.com/region_1/images/262144px/{z}/{y}/{x}.jpg',
             cellData: 'https://api.github.com/repos/acycliq/celltyped_MsBrain_Eg3_VS6_JH_V6/contents/region_1/cellData?ref=master',
             geneData: 'https://api.github.com/repos/acycliq/celltyped_MsBrain_Eg3_VS6_JH_V6/contents/region_1/geneData?ref=master',
             cellBoundaries: 'https://api.github.com/repos/acycliq/celltyped_MsBrain_Eg3_VS6_JH_V6/contents/region_1/cellBoundaries?ref=master',
