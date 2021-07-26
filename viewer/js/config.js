@@ -55,9 +55,9 @@ function config() {
             roi: {"x0": 0, "x1": 93968, "y0": 0, "y1": 73157},
             imageSize: [262144, 262144 * 73157 / 93968, ],
             tiles: 'https://www.acycliq.xyz/MsBrain_Eg3_VS6_JH_V6/region_1/262144px/{z}/{y}/{x}.jpg_ZZZ',
-            cellData: 'https://api.github.com/repos/acycliq/MsBrain_Eg3_VS6_JH_V6/contents/region_1/cellData?ref=master',
-            geneData: 'https://api.github.com/repos/acycliq/MsBrain_Eg3_VS6_JH_V6/contents/region_1/geneData?ref=master',
-            cellBoundaries: 'https://api.github.com/repos/acycliq/MsBrain_Eg3_VS6_JH_V6/contents/region_1/cellBoundaries?ref=master',
+            cellData: 'https://api.github.com/repos/acycliq/celltyped_MsBrain_Eg3_VS6_JH_V6/contents/region_1/cellData?ref=master',
+            geneData: 'https://api.github.com/repos/acycliq/celltyped_MsBrain_Eg3_VS6_JH_V6/contents/region_1/geneData?ref=master',
+            cellBoundaries: 'https://api.github.com/repos/acycliq/celltyped_MsBrain_Eg3_VS6_JH_V6/contents/region_1/cellBoundaries?ref=master',
             class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
         },
         {   // 7.
