@@ -265,6 +265,7 @@ function renderPolygons(data) {
                         layer.setStyle({
                             'color': feature.properties.color,
                             'weight': 1.5,
+                            'opacity': 0.3,
                         });
                     }
                 }
