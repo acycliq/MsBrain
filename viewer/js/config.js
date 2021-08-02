@@ -103,8 +103,29 @@ function config() {
             class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
         },
 
-
         {   // 11.
+            name: 'VS6_MsBrain_B3_VS6library_V10_LH_02-07-21_region_0',
+            roi: {"x0": 0, "x1": 89458, "y0": 0, "y1": 67120},
+            imageSize: [262144, 262144 * 67120 / 89458],
+            tiles: 'https://www.acycliq.xyz/VS6_MsBrain_B3_VS6library_V10_LH_02-07-21/region_0/262144px/{z}/{y}/{x}.jpg_ZZZ',
+            cellData: 'https://api.github.com/repos/acycliq/VS6_MsBrain_B3_VS6library_V10_LH_02-07-21/contents/region_0/cellData?ref=master',
+            geneData: 'https://api.github.com/repos/acycliq/VS6_MsBrain_B3_VS6library_V10_LH_02-07-21/contents/region_0/geneData?ref=master',
+            cellBoundaries: 'https://api.github.com/repos/acycliq/VS6_MsBrain_B3_VS6library_V10_LH_02-07-21/contents/region_0/cellBoundaries?ref=master',
+            class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
+        },
+
+        {   // 12.
+            name: 'VS6_MsBrain_B3_VS6library_V10_LH_02-07-21_region_1',
+            roi: {"x0": 0, "x1": 87241, "y0": 0, "y1": 57609},
+            imageSize: [262144, 262144 * 57609 / 87241],
+            tiles: 'https://www.acycliq.xyz/VS6_MsBrain_B3_VS6library_V10_LH_02-07-21/region_1/262144px/{z}/{y}/{x}.jpg_ZZZ',
+            cellData: 'https://api.github.com/repos/acycliq/VS6_MsBrain_B3_VS6library_V10_LH_02-07-21/contents/region_1/cellData?ref=master',
+            geneData: 'https://api.github.com/repos/acycliq/VS6_MsBrain_B3_VS6library_V10_LH_02-07-21/contents/region_1/geneData?ref=master',
+            cellBoundaries: 'https://api.github.com/repos/acycliq/VS6_MsBrain_B3_VS6library_V10_LH_02-07-21/contents/region_1/cellBoundaries?ref=master',
+            class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
+        },
+
+        {   // 13.
             name: 'MsBrain_ZM0_VS6_JH_V6_05-15-2021_region_0',
             roi: {"x0": 0, "x1": 99836, "y0": 0, "y1": 73660},
             imageSize: [262144, 262144 * 73660 / 99836, ],
@@ -115,7 +136,7 @@ function config() {
             class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
         },
 
-        {   // 12.
+        {   // 14.
             name: 'MsBrain_ZM1_VS6_JH_V11_05-16-2021_region_0',
             roi: {"x0": 0, "x1": 104484, "y0": 0, "y1": 87440},
             imageSize: [262144, 262144 * 87440 / 104484, ],
@@ -125,7 +146,7 @@ function config() {
             cellBoundaries: 'https://api.github.com/repos/acycliq/MsBrain_ZM1_VS6_JH_V11_05-16-2021/contents//region_0/cellBoundaries?ref=master',
             class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
         },
-        {   // 13.
+        {   // 15.
             name: 'MsBrain_ZM2_VS6_JH_V11_05-15-2021_region_0',
             roi: {"x0": 0, "x1": 91607, "y0": 0, "y1": 61303},
             imageSize: [262144, 262144 * 61303 / 91607, ],
@@ -136,7 +157,7 @@ function config() {
             class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
         },
 
-        {   // 14.
+        {   // 16.
             name: 'MsBrain_ZM3_VS6_JH_V11_05-17-2021_region_0',
             roi: {"x0": 0, "x1": 100627, "y0": 0, "y1": 97890},
             imageSize: [262144, 262144 * 97890 / 100627, ],
@@ -147,7 +168,7 @@ function config() {
             class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
         },
 
-        {   // 15.
+        {   // 17.
             name: 'MsBrain_ZM4_VS6_JH_V11_05-11-2021_region_0',
             roi: {"x0": 0, "x1": 96189, "y0": 0, "y1": 77745},
             imageSize: [262144, 262144 * 77745 / 96189, ],
@@ -158,7 +179,7 @@ function config() {
             class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
         },
 
-        {   // 16.
+        {   // 18.
             name: 'MsBrain_ZM5.1_VS6_JH_V11_05-12-2021_region_0',
             roi: {"x0": 0, "x1": 99062, "y0": 0, "y1": 95358},
             imageSize: [262144, 262144 * 95358 / 99062, ],
@@ -169,7 +190,7 @@ function config() {
             class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
         },
 
-        {   // 17.
+        {   // 19.
             name: 'MsBrain_ZM5.2_VS6_JH_V6_05-13-2021_region_0',
             roi: {"x0": 0, "x1": 97593, "y0": 0, "y1": 89273},
             imageSize: [262144, 262144 * 89273 / 97593, ],
@@ -180,9 +201,7 @@ function config() {
             class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
         },
 
-
-
-        {   // 18.
+        {   // 20.
             name: 'MsBrain_ZM6.1_VS6_V6_JH_05-11-2021_region_0',
             roi: {"x0": 0, "x1": 94104, "y0": 0, "y1": 84491},
             imageSize: [262144, 262144 * 84491 / 94104, ],
@@ -193,9 +212,7 @@ function config() {
             class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
         },
 
-
-
-        {   // 19.
+        {   // 21.
             name: 'MsBrain_ZM7.1_VS6_V6_JH_05-12-2021_region_0',
             roi: {"x0": 0, "x1": 91765, "y0": 0, "y1": 77889},
             imageSize: [262144, 262144 * 77889 / 91765, ],
@@ -206,8 +223,7 @@ function config() {
             class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
         },
 
-
-        {   // 20.
+        {   // 22.
             name: 'MsBrain_ZM7.2_VS6_JH_V11_05-13-2021_region_0',
             roi: {"x0": 0, "x1": 92416, "y0": 0, "y1": 89263},
             imageSize: [262144, 262144 * 89263 / 92416, ],
