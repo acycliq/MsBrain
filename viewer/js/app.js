@@ -1,8 +1,8 @@
 var cookie = sessionStorage['myvariable']
 
 if (!cookie){ // if you dont have cookie, run the default selection
-    console.log('No cookie, starting with default dataset')
-    var configSettings = config().get('default')
+    console.log('No cookie, starting with dummy dataset')
+    var configSettings = config().get('dummy')
 }
 else {
     console.log('Found cookie: ' + cookie)

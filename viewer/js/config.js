@@ -1,7 +1,17 @@
 function config() {
     var ini = [
+        {   // 0.
+            name: 'dummy',
+            roi: {"x0": 0, "x1": 98824, "y0": 0, "y1": 77294},
+            imageSize: [262144, 262144 * 77294 / 98824],
+            tiles: 'https://raw.githubusercontent.com/acycliq/MsBrain_Eg1_VS6_JH_V6/master/region_0/map_tiles/262144px/{z}/{y}/{x}.jpg',
+            cellData: 'https://api.github.com/repos/acycliq/MsBrain/contents/viewer/data/dummy/cellData?ref=master',
+            geneData: 'https://api.github.com/repos/acycliq/MsBrain/contents/viewer/data/dummy/geneData?ref=master',
+            cellBoundaries: 'https://api.github.com/repos/acycliq/MsBrain/contents/viewer/data/dummy/cellBoundaries?ref=master',
+            class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
+        },
         {   // 1.
-            name: 'default',
+            name: 'MsBrain_Eg1_VS6_JH_V6_region_0',
             roi: {"x0": 0, "x1": 98824, "y0": 0, "y1": 77294},
             imageSize: [262144, 262144 * 77294 / 98824],
             tiles: 'https://raw.githubusercontent.com/acycliq/MsBrain_Eg1_VS6_JH_V6/master/region_0/map_tiles/262144px/{z}/{y}/{x}.jpg',
