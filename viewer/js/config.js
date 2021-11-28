@@ -244,6 +244,28 @@ function config() {
             class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
         },
 
+        {   // 23.
+            name: 'VS6MsBrain_F5_VS6libary_V10_LH_03-17-21_region_0',
+            roi: {"x0": 0, "x1": 78418, "y0": 0, "y1": 71058},
+            imageSize: [262144, 262144 * 71058 / 78418, ],
+            tiles: 'https://www.acycliq.xyz/VS6MsBrain_F5_VS6libary_V10_LH_03-17-21/region_0/262144px/{z}/{y}/{x}.jpg_ZZZ',
+            cellData: 'https://api.github.com/repos/acycliq/VS6MsBrain_F5_VS6libary_V10_LH_03-17-21/contents/region_0/cellData?ref=master',
+            geneData: 'https://api.github.com/repos/acycliq/VS6MsBrain_F5_VS6libary_V10_LH_03-17-21/contents/region_0/geneData?ref=master',
+            cellBoundaries: 'https://api.github.com/repos/acycliq/VS6MsBrain_F5_VS6libary_V10_LH_03-17-21/contents//region_0/cellBoundaries?ref=master',
+            class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
+        },
+
+        {   // 24.
+            name: 'VS6MsBrain_F5_VS6libary_V10_LH_03-17-21_region_1',
+            roi: {"x0": 0, "x1": 76462, "y0": 0, "y1": 74734},
+            imageSize: [262144, 262144 * 74734 / 76462, ],
+            tiles: 'https://www.acycliq.xyz/VS6MsBrain_F5_VS6libary_V10_LH_03-17-21/region_1/262144px/{z}/{y}/{x}.jpg_ZZZ',
+            cellData: 'https://api.github.com/repos/acycliq/VS6MsBrain_F5_VS6libary_V10_LH_03-17-21/contents/region_1/cellData?ref=master',
+            geneData: 'https://api.github.com/repos/acycliq/VS6MsBrain_F5_VS6libary_V10_LH_03-17-21/contents/region_1/geneData?ref=master',
+            cellBoundaries: 'https://api.github.com/repos/acycliq/VS6MsBrain_F5_VS6libary_V10_LH_03-17-21/contents//region_1/cellBoundaries?ref=master',
+            class_name_separator: '.' //The delimiter in the class name string, eg if name is Astro.1, then use the dot as a separator, if Astro1 then use an empty string. It is used in a menu/control to show the class names nested under its broader name
+        },
+
 
     ];
     var out = d3.map(ini, function (d) {
