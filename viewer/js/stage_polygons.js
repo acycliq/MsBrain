@@ -54,7 +54,7 @@ function renderPolygons(data) {
     console.log('In renderPolygons')
     var alphaScale = d3.scaleLinear()
         .domain([0, map.getMinZoom(), map.getMaxZoom()])
-        .range([1, 1, 0.2]); // <-- huh?? I dont remember why i did this
+        .range([0.2, 0.5, 0.2]); // <-- huh?? I dont remember why i did this
     alphaScale.clamp(true);
     var firstDraw = true;
 
@@ -94,7 +94,7 @@ function renderPolygons(data) {
             // var markerCoords = project(markerLatLng)
             data.features.forEach(function (feature, index) {
                 var color = myUtils().string2hex(feature.properties.agg.color),
-                    alpha = 0.8;
+                    alpha = 0.3;
                 if (feature.geometry === null) return;
                 bounds = L.bounds(feature.geometry.coordinates[0]);
                 if (feature.geometry.type === 'Polygon') {
